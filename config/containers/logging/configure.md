@@ -170,7 +170,7 @@ see more options.
 
 ## Limitations of logging drivers
 
-- Users of Docker Enterprise can make use of "dual logging", which enables you
+- Users can make use of "dual logging", which enables you
   to use the `docker logs` command for any logging driver. Refer to
   [reading logs when using remote logging drivers](dual-logging.md) for
   information about using `docker logs` to read container logs locally for many
@@ -183,10 +183,6 @@ see more options.
     - `etwlogs`
     - `gcplogs`
     - `Logentries`
-- When using Docker Community Engine, the `docker logs` command is only available on the following drivers:
-    - `local`
-    - `json-file`
-    - `journald`
 - Reading log information requires decompressing rotated log files, which causes
   a temporary increase in disk usage (until the log entries from the rotated
   files are read) and an increased CPU usage while decompressing. 
